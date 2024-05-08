@@ -2,7 +2,6 @@ export const initMap = async () => {
   await ymaps3.ready;
   const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } =
     ymaps3;
-
   const map = new YMap(document.querySelector('.content__wrapper'), {
     location: {
       center: [37.164175, 56.753429],
